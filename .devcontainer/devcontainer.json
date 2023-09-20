@@ -10,11 +10,21 @@
 
     "forwardPorts": [3000],
 
-    // for more settings: containers.dev
-    "portsAttributes": {
-        "3000": {
-            "label": "ReactApp",
-            "onAutoForward": "openPreview"
+    // // for more settings: containers.dev
+    // "portsAttributes": {
+    //     "3000": {
+    //         "label": "ReactApp",
+    //         "onAutoForward": "openPreview"
+    //     }
+    // }
+    
+    "customizations": {
+        "vscode": {
+            "extensions": ["esbenp.prettier-vscode"],
+            "settings": {
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.formatOnSave": true
+            }
         }
     }
 }
